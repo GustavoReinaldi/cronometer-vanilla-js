@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body onkeyup="keyExecEvent(event)">
+    <div class="content">
+        <div class="cronometro-display">
+            <div class="cronos-digit">
+                <p id="display-hours"></p>
+                <p>Hours</p>
+            </div>
+            <div class="cronos-digit">
+                <p id="display-minutes"></p>
+                <p>Minutes</p>
+            </div>
+            <div class="cronos-digit">
+                <p id="display-seconds"></p>
+                <p>Seconds</p>
+            </div>
+            <div class="cronos-digit">
+                <p id="display-milis">00</p>
+                <p>Miliseconds</p>
+            </div>
+        </div>
+        <div class="buttons-container">
+            <button type="button" class="button start" onclick="handleActionButtonClick()" id="action-button">Start <br>(ENTER)</button>
+            <button type="button" class="button" onclick="clearCronometer()">Clear Cronometer<br> (ESC)</button>
+            <button type="button" class="button" onclick="markTime()">Lap (Space)</button>
+        </div>
+        <button type="button" class="button" onclick="clearMarkedTimes()">Clear Laps<br>(C)</button>
+        <h3 style="text-align: center; margin: 30px 0 10px;">Laps List</h3>
+        <div class="table-scroll">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Hours</th>
+                        <th>Minutes</th>
+                        <th>Seconds</th>
+                        <th>Miliseconds</th>
+                    </tr>
+                </thead>
+                <tbody id="storaged-timer-list">
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="./keysmapper.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

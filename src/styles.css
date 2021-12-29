@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.button {
+  width: calc(97% / 3);
+  min-height: 35px;
+  padding: 5px 10px;
+  border-radius: 3px;
+  border-style: solid;
+  cursor: pointer;
+}
+.content {
+  width: 50%;
+  padding: 10px 20px;
+  margin: calc((100vh / 7)) auto;
+}
+#storaged-timer-list {
+  cursor: pointer;
+}
+.cronometro-display {
+  min-height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.cronometro-display .cronos-digit {
+  width: calc(96% / 4);
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+}
+.buttons-container {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.start {
+  background-color: #229922;
+  color: white;
+}
+.continue {
+  background-color: #5555ff;
+  color: white;
+}
+.stop {
+  background-color: #ff5555;
+  color: white;
+}
+
+.table-scroll {
+  height: 380px;
+  max-height: 380px;
+  overflow-y: scroll;
+}
+.table-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.table-scroll {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #d6eeee;
+}
