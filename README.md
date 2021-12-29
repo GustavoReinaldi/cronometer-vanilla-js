@@ -20,3 +20,7 @@ You can click at buttons or press the keys.
 | Lap button | SPACE | 
 |  Clear Lap History | C | 
 | Lap History | - | 
+
+### Test by yourself
+
+Access the [link](https://gustavoreinaldi.github.io/timmer-vanilla-js/) and take a look how it works.
